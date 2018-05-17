@@ -1,7 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <header>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link nav--atras" href="#">
+              <img class="img-fluid" src="static/img/common/atras.svg" alt="Volver atras">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav--logo" href="/">
+              <img class="img-fluid" src="static/img/common/logo.svg" alt="Logo Metro Valencia">
+            </a>
+          </li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <router-view/>
+    </main>
   </div>
 </template>
 
@@ -10,14 +28,3 @@ export default {
   name: 'App'
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

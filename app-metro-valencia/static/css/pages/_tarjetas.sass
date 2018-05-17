@@ -1,0 +1,122 @@
+.page--tarjetas
+    section.buscador
+        display: none
+        margin: 0 auto
+        margin-top: 5rem
+        height: calc(30vh - 5rem)
+        h1
+            text-align: center
+        .buscador--formulario
+            padding-top: 1rem
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 90%
+            margin: 0 auto
+            input::placeholder
+                color: $color-blanco
+            .form-control
+                border-radius: 0px
+                border: 2px solid $color-blanco
+                padding: .5rem
+                background-color: initial
+                color: $color-blanco
+            .formulario--boton
+                margin-left: 1rem
+                border: 0px
+                border-radius: 0
+                background-color: initial
+                color: $color-blanco
+                font-size: 2rem
+    section.busqueda
+        display: none
+        margin: 0 auto
+        margin-top: 5rem
+        height: calc(30vh - 5rem)
+        width: 90%
+        .busqueda--anyadir-favoritos
+            margin: 0 !important
+            width: 4.5rem
+            text-align: right
+            .btn
+                border: none
+                background-color: initial
+                height: 100%
+                &:focus
+                    box-shadow: initial
+                svg
+                    fill: none
+                    stroke: $color-blanco
+                    stroke-width: 2px
+    section.anyadir-favoritos
+        margin: 0 auto
+        margin-top: 5rem
+        height: calc(30vh - 5rem)
+        width: 90%
+        .anyadir-favoritos--formulario
+            display: flex        
+            input::placeholder
+                color: $color-blanco
+            .form-control
+                border-radius: 0px
+                border: 2px solid $color-blanco
+                padding: .5rem
+                background-color: initial
+                color: $color-blanco
+            .formulario--boton
+                margin-left: 1rem
+                border: 0px
+                border-radius: 0
+                background-color: initial
+                color: $color-blanco
+                font-size: 1.5rem 
+    section.favoritos
+        background-color: $color-blanco
+        color: $color-rojo
+        padding-top: 1rem
+        height: 70vh
+        .titulo
+            border-bottom: 2px solid $color-rojo
+            margin: 0 auto
+            width: 45%
+            h1
+                text-align: center
+                color: $color-rojo
+                margin-bottom: .5rem
+        .favoritos--tarjetas
+            margin-top: 1rem
+            display: flex
+            justify-content: space-around
+            align-items: center
+            .tarjetas--informacion
+                margin-left: 2rem
+                font-size: 1rem
+                color: $color-negro
+                text-align: left
+                width: 75%
+                .informacion--nombre
+                    border-bottom: 1px solid $color-rojo
+                    p
+                        margin: 0
+                        margin-left: 1rem
+                        padding: .5rem
+                .informacion--viajes
+                    p
+                        margin: 0
+                        margin-left: 1rem
+                        padding: .5rem
+            .tarjetas--eliminar
+                background-color: initial
+                border: 0
+                padding: 1rem
+                font-size: 1rem
+                width: 25%
+                color: $color-rojo
+                text-align: center
+                svg
+                    width: 18px
+                    fill: $color-rojo
+                    
+
+
+
