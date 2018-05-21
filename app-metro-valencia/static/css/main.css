@@ -8448,20 +8448,26 @@ body {
   font-family: "roboto";
   background-color: #cf1143;
   color: #ffffff;
+  padding-top: 4rem;
+}
+
+button {
+  background-color: initial;
+  border: 0;
 }
 
 h1 {
   font-size: 1.35rem;
   color: #ffffff;
   font-weight: 500;
-  margin: 0;
 }
 
 header {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   z-index: 1000;
 }
 
@@ -8485,6 +8491,146 @@ header .nav li:nth-child(1), header .nav li:nth-child(3) {
 
 header .nav li:nth-child(2) {
   width: 50px;
+}
+
+.page--trayectos section.trayectos--formulario {
+  height: calc((100vh / 3) - (4rem / 3));
+  padding: 1rem;
+}
+
+.page--trayectos section.trayectos--formulario .formulario--contenedor {
+  display: flex;
+  align-items: center;
+}
+
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--icono-trayecto, .page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--icono-flechas {
+  width: 10%;
+}
+
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form {
+  width: 80%;
+}
+
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form input {
+  background: initial;
+  border: 2px solid #ffffff;
+  border-radius: 0px;
+}
+
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form input::placeholder {
+  color: #ffffff;
+}
+
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form input:first-child {
+  margin-bottom: 1rem;
+}
+
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form input:focus {
+  box-shadow: initial;
+}
+
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--icono-trayecto {
+  display: flex;
+  justify-content: center;
+}
+
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--icono-trayecto img {
+  width: 1.3rem;
+  margin-right: .5rem;
+}
+
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--icono-flechas {
+  display: flex;
+  justify-content: center;
+}
+
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--icono-flechas button {
+  margin-left: .5rem;
+}
+
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--icono-flechas button img {
+  width: 1.3rem;
+}
+
+.page--trayectos section.trayectos--formulario .btn__horario {
+  display: block;
+  background-color: #ffffff;
+  color: #cf1143;
+  border: 0;
+  border-radius: 0;
+  margin: 0 auto;
+  padding: .5rem 1rem;
+  font-weight: 500;
+}
+
+.page--trayectos section.trayectos--formulario .btn__horario i {
+  margin-left: .5rem;
+}
+
+.page--trayectos section.trayectos--historial, .page--trayectos section.trayectos--favoritos {
+  padding: 1rem;
+  height: calc((100vh / 3) - (4rem / 3));
+  overflow: auto;
+}
+
+.page--trayectos section.trayectos--historial h1, .page--trayectos section.trayectos--favoritos h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #cf1143;
+}
+
+.page--trayectos section.trayectos--historial hr, .page--trayectos section.trayectos--favoritos hr {
+  width: 10rem;
+  margin: 0 auto;
+  border: 2px solid #cf1143;
+}
+
+.page--trayectos section.trayectos--historial .table, .page--trayectos section.trayectos--favoritos .table {
+  color: #000000;
+}
+
+.page--trayectos section.trayectos--historial .table td, .page--trayectos section.trayectos--favoritos .table td {
+  padding-top: 1rem;
+  border: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.page--trayectos section.trayectos--historial .table td.text, .page--trayectos section.trayectos--favoritos .table td.text {
+  font-size: 1rem;
+}
+
+.page--trayectos section.trayectos--historial .table td button, .page--trayectos section.trayectos--favoritos .table td button {
+  display: block;
+  width: 100%;
+}
+
+.page--trayectos section.trayectos--favoritos {
+  background-color: #ffffff;
+}
+
+.page--trayectos section.trayectos--historial {
+  color: #ffffff;
+}
+
+.page--trayectos section.trayectos--historial h1 {
+  color: #ffffff;
+}
+
+.page--trayectos section.trayectos--historial hr {
+  border-color: #ffffff;
+}
+
+.page--trayectos section.trayectos--historial svg {
+  stroke: #ffffff;
+  stroke-width: 2px;
+  fill: #cf1143;
+  width: 1rem;
+  padding: 0;
+}
+
+.page--trayectos section.trayectos--historial .table {
+  color: #ffffff;
 }
 
 .page--tarjetas section.buscador {
