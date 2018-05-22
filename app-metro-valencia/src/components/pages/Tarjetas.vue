@@ -8,6 +8,7 @@
       </form>
     </section>
     <section class="busqueda">
+      <h1>Tarjetas</h1>
       <div class="busqueda--textos">
         <p>
           A la tarjeta 1526 5849 1584 lo quedan
@@ -23,7 +24,8 @@
       </div>
     </section>
     <section class="anyadir-favoritos">
-        <p>Tarjeta: <strong>1526 5849 1584</strong></p>
+      <h1>Añadir a favoritos</h1>
+      <p>Tarjeta: <strong>1526 5849 1584</strong></p>
       <form class="anyadir-favoritos--formulario">
         <input class="form-control" type="text" placeholder="Titular de la tarjeta...">
         <button class="btn formulario--boton"><i class="fas fa-plus"></i></button>

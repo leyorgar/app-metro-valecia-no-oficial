@@ -8636,12 +8636,8 @@ header .nav li:nth-child(2) {
 .page--tarjetas section.buscador {
   display: none;
   margin: 0 auto;
-  margin-top: 5rem;
-  height: calc(30vh - 5rem);
-}
-
-.page--tarjetas section.buscador h1 {
-  text-align: center;
+  padding: 1rem 0;
+  height: 30vh;
 }
 
 .page--tarjetas section.buscador .buscador--formulario {
@@ -8651,6 +8647,10 @@ header .nav li:nth-child(2) {
   align-items: center;
   width: 90%;
   margin: 0 auto;
+}
+
+.page--tarjetas section.buscador .buscador--formulario input:focus {
+  box-shadow: 0;
 }
 
 .page--tarjetas section.buscador .buscador--formulario input::placeholder {
@@ -8675,23 +8675,28 @@ header .nav li:nth-child(2) {
 }
 
 .page--tarjetas section.busqueda {
-  display: none;
   margin: 0 auto;
-  margin-top: 5rem;
-  height: calc(30vh - 5rem);
+  padding: 1rem 0;
+  height: 30vh;
   width: 90%;
 }
 
+.page--tarjetas section.busqueda .busqueda--textos {
+  padding-top: 1rem;
+  width: 80%;
+}
+
 .page--tarjetas section.busqueda .busqueda--anyadir-favoritos {
-  margin: 0 !important;
-  width: 4.5rem;
-  text-align: right;
+  display: block;
+  margin-left: auto;
+  width: 4rem;
 }
 
 .page--tarjetas section.busqueda .busqueda--anyadir-favoritos .btn {
   border: none;
   background-color: initial;
   height: 100%;
+  width: 80%;
 }
 
 .page--tarjetas section.busqueda .busqueda--anyadir-favoritos .btn:focus {
@@ -8705,14 +8710,23 @@ header .nav li:nth-child(2) {
 }
 
 .page--tarjetas section.anyadir-favoritos {
+  display: none;
   margin: 0 auto;
-  margin-top: 5rem;
-  height: calc(30vh - 5rem);
+  padding: 1rem 0;
+  height: 30vh;
   width: 90%;
+}
+
+.page--tarjetas section.anyadir-favoritos p {
+  padding-top: 1rem;
 }
 
 .page--tarjetas section.anyadir-favoritos .anyadir-favoritos--formulario {
   display: flex;
+}
+
+.page--tarjetas section.anyadir-favoritos .anyadir-favoritos--formulario input:focus {
+  box-shadow: 0;
 }
 
 .page--tarjetas section.anyadir-favoritos .anyadir-favoritos--formulario input::placeholder {
@@ -8734,6 +8748,10 @@ header .nav li:nth-child(2) {
   background-color: initial;
   color: #ffffff;
   font-size: 1.5rem;
+}
+
+.page--tarjetas section.buscador h1, .page--tarjetas section.busqueda h1, .page--tarjetas section.anyadir-favoritos h1 {
+  text-align: center;
 }
 
 .page--tarjetas section.favoritos {

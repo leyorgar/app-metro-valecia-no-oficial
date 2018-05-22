@@ -2,10 +2,8 @@
     section.buscador
         display: none
         margin: 0 auto
-        margin-top: 5rem
-        height: calc(30vh - 5rem)
-        h1
-            text-align: center
+        padding: 1rem 0
+        height: 30vh
         .buscador--formulario
             padding-top: 1rem
             display: flex
@@ -13,6 +11,8 @@
             align-items: center
             width: 90%
             margin: 0 auto
+            input:focus
+                box-shadow: 0
             input::placeholder
                 color: $color-blanco
             .form-control
@@ -29,19 +29,22 @@
                 color: $color-blanco
                 font-size: 2rem
     section.busqueda
-        display: none
         margin: 0 auto
-        margin-top: 5rem
-        height: calc(30vh - 5rem)
+        padding: 1rem 0 
+        height: 30vh
         width: 90%
+        .busqueda--textos
+            padding-top: 1rem
+            width: 80%
         .busqueda--anyadir-favoritos
-            margin: 0 !important
-            width: 4.5rem
-            text-align: right
+            display: block
+            margin-left: auto
+            width: 4rem
             .btn
                 border: none
                 background-color: initial
                 height: 100%
+                width: 80%
                 &:focus
                     box-shadow: initial
                 svg
@@ -49,12 +52,17 @@
                     stroke: $color-blanco
                     stroke-width: 2px
     section.anyadir-favoritos
+        display: none
         margin: 0 auto
-        margin-top: 5rem
-        height: calc(30vh - 5rem)
+        padding: 1rem 0
+        height: 30vh
         width: 90%
+        p
+            padding-top: 1rem
         .anyadir-favoritos--formulario
-            display: flex        
+            display: flex
+            input:focus
+                box-shadow: 0        
             input::placeholder
                 color: $color-blanco
             .form-control
@@ -69,7 +77,10 @@
                 border-radius: 0
                 background-color: initial
                 color: $color-blanco
-                font-size: 1.5rem 
+                font-size: 1.5rem
+    section.buscador, section.busqueda, section.anyadir-favoritos
+        h1
+            text-align: center 
     section.favoritos
         background-color: $color-blanco
         color: $color-rojo
