@@ -8447,7 +8447,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "roboto";
   background-color: #cf1143;
-  color: #ffffff;
+  color: #000;
   padding-top: 4rem;
 }
 
@@ -8458,7 +8458,7 @@ button {
 
 h1 {
   font-size: 1.35rem;
-  color: #ffffff;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -8468,11 +8468,10 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
 }
 
 header .nav {
-  background: #ffffff;
+  background: #fff;
   align-items: center;
 }
 
@@ -8491,6 +8490,80 @@ header .nav li:nth-child(1), header .nav li:nth-child(3) {
 
 header .nav li:nth-child(2) {
   width: 50px;
+}
+
+.page--home {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url(/static/img/home/fondo.jpg);
+  background-size: cover;
+  animation-name: aniFondo;
+  animation-duration: 8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.page--home .home--brand {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  height: 7rem;
+  margin-top: 4rem;
+}
+
+.page--home .home--brand .brand--img {
+  width: 10rem;
+}
+
+.page--home nav {
+  position: absolute;
+  bottom: 0;
+}
+
+.page--home nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+.page--home nav ul li:first-child, .page--home nav ul li:nth-child(2) {
+  margin: 0 2rem;
+}
+
+.page--home nav ul li a {
+  color: #fff;
+}
+
+.page--home nav ul li .nav--icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border-radius: 50%;
+  background-color: #cf1143;
+  width: 6rem;
+  height: 6rem;
+}
+
+.page--home nav ul li p {
+  color: #cf1143;
+  text-align: center;
+}
+
+@keyframes aniFondo {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 0%;
+  }
 }
 
 .page--trayectos section.trayectos--formulario {
@@ -8513,12 +8586,12 @@ header .nav li:nth-child(2) {
 
 .page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form input {
   background: initial;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   border-radius: 0px;
 }
 
 .page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form input::placeholder {
-  color: #ffffff;
+  color: #fff;
 }
 
 .page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form input:first-child {
@@ -8554,7 +8627,7 @@ header .nav li:nth-child(2) {
 
 .page--trayectos section.trayectos--formulario .btn__horario {
   display: block;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #cf1143;
   border: 0;
   border-radius: 0;
@@ -8586,7 +8659,7 @@ header .nav li:nth-child(2) {
 }
 
 .page--trayectos section.trayectos--historial .table, .page--trayectos section.trayectos--favoritos .table {
-  color: #000000;
+  color: #000;
 }
 
 .page--trayectos section.trayectos--historial .table td, .page--trayectos section.trayectos--favoritos .table td {
@@ -8606,23 +8679,23 @@ header .nav li:nth-child(2) {
 }
 
 .page--trayectos section.trayectos--favoritos {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .page--trayectos section.trayectos--historial {
-  color: #ffffff;
+  color: #fff;
 }
 
 .page--trayectos section.trayectos--historial h1 {
-  color: #ffffff;
+  color: #fff;
 }
 
 .page--trayectos section.trayectos--historial hr {
-  border-color: #ffffff;
+  border-color: #fff;
 }
 
 .page--trayectos section.trayectos--historial svg {
-  stroke: #ffffff;
+  stroke: #fff;
   stroke-width: 2px;
   fill: #cf1143;
   width: 1rem;
@@ -8630,7 +8703,192 @@ header .nav li:nth-child(2) {
 }
 
 .page--trayectos section.trayectos--historial .table {
-  color: #ffffff;
+  color: #fff;
+}
+
+.page--mapas {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.page--mapas .mapas--boton .btn {
+  width: 165px;
+  height: 50px;
+  margin-top: 1rem;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.page--mapas .mapas--mostrado #mostrado--ubicacion, .page--mapas .mapas--mostrado #mostrado--lineas {
+  width: 90%;
+  height: 490px;
+  margin: 0 auto;
+  display: block;
+}
+
+.page--mostrar-horarios {
+  height: calc(100vh - 4rem);
+}
+
+.page--mostrar-horarios section.horarios--texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+}
+
+.page--mostrar-horarios section.horarios--texto h1 {
+  font-size: 1.35rem;
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+}
+
+.page--mostrar-horarios section.horarios--favoritos {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.page--mostrar-horarios section.horarios--favoritos .ruta {
+  width: 80%;
+}
+
+.page--mostrar-horarios section.horarios--favoritos .ruta .ruta-inicio {
+  border-bottom: 0.1rem solid #cf1143;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page--mostrar-horarios section.horarios--favoritos .ruta .ruta-inicio .zona {
+  margin-top: 0;
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.page--mostrar-horarios section.horarios--favoritos .ruta .ruta-inicio p {
+  margin: .5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.page--mostrar-horarios section.horarios--favoritos .ruta .ruta-fin {
+  border-top: 0.1rem solid #cf1143;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page--mostrar-horarios section.horarios--favoritos .ruta .ruta-fin .zona {
+  margin-top: 0;
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.page--mostrar-horarios section.horarios--favoritos .ruta .ruta-fin p {
+  margin: .5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.page--mostrar-horarios section.horarios--favoritos .favorito {
+  width: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page--mostrar-horarios section.horarios--favoritos .favorito .btn {
+  border: none;
+  background-color: initial;
+  height: 100%;
+}
+
+.page--mostrar-horarios section.horarios--favoritos .favorito .btn:focus {
+  box-shadow: initial;
+}
+
+.page--mostrar-horarios section.horarios--favoritos .favorito .btn svg {
+  width: 65%;
+  fill: none;
+  stroke: #cf1143;
+  stroke-width: 2px;
+}
+
+.page--mostrar-horarios section.horarios--rutas {
+  background-color: #cf1143;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page--mostrar-horarios section.horarios--rutas button {
+  background-color: #fff;
+  color: #cf1143;
+  border: 0;
+  margin: .5rem;
+  padding: .2rem 1.5rem;
+}
+
+.page--mostrar-horarios section.horarios--rutas button:focus {
+  box-shadow: initial;
+  outline: 0;
+}
+
+.page--mostrar-horarios section.horarios--rutas .inactivo {
+  background-color: initial;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.page--mostrar-horarios section.horarios--direccion {
+  background-color: #fff;
+}
+
+.page--mostrar-horarios section.horarios--direccion .direccion--linea {
+  padding: .3rem 1rem;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page--mostrar-horarios section.horarios--direccion .direccion--linea .linea {
+  background-color: #EFC42B;
+  padding: .5rem 1rem;
+}
+
+.page--mostrar-horarios section.horarios--titulo {
+  background-color: #cf1143;
+  height: 3rem;
+  color: #fff;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page--mostrar-horarios section.horarios--tabla {
+  height: 30%;
+  margin: 0 1rem;
+  overflow: auto;
+  background-color: #fff;
+}
+
+.page--mostrar-horarios section.horarios--tabla table.table {
+  text-align: center;
+}
+
+.page--mostrar-horarios section.horarios--tabla table.table th, .page--mostrar-horarios section.horarios--tabla table.table td {
+  border: 0;
 }
 
 .page--tarjetas section.buscador {
@@ -8654,15 +8912,15 @@ header .nav li:nth-child(2) {
 }
 
 .page--tarjetas section.buscador .buscador--formulario input::placeholder {
-  color: #ffffff;
+  color: #fff;
 }
 
 .page--tarjetas section.buscador .buscador--formulario .form-control {
   border-radius: 0px;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   padding: .5rem;
   background-color: initial;
-  color: #ffffff;
+  color: #fff;
 }
 
 .page--tarjetas section.buscador .buscador--formulario .formulario--boton {
@@ -8670,7 +8928,7 @@ header .nav li:nth-child(2) {
   border: 0px;
   border-radius: 0;
   background-color: initial;
-  color: #ffffff;
+  color: #fff;
   font-size: 2rem;
 }
 
@@ -8705,7 +8963,7 @@ header .nav li:nth-child(2) {
 
 .page--tarjetas section.busqueda .busqueda--anyadir-favoritos .btn svg {
   fill: none;
-  stroke: #ffffff;
+  stroke: #fff;
   stroke-width: 2px;
 }
 
@@ -8730,15 +8988,15 @@ header .nav li:nth-child(2) {
 }
 
 .page--tarjetas section.anyadir-favoritos .anyadir-favoritos--formulario input::placeholder {
-  color: #ffffff;
+  color: #fff;
 }
 
 .page--tarjetas section.anyadir-favoritos .anyadir-favoritos--formulario .form-control {
   border-radius: 0px;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   padding: .5rem;
   background-color: initial;
-  color: #ffffff;
+  color: #fff;
 }
 
 .page--tarjetas section.anyadir-favoritos .anyadir-favoritos--formulario .formulario--boton {
@@ -8746,16 +9004,17 @@ header .nav li:nth-child(2) {
   border: 0px;
   border-radius: 0;
   background-color: initial;
-  color: #ffffff;
+  color: #fff;
   font-size: 1.5rem;
 }
 
 .page--tarjetas section.buscador h1, .page--tarjetas section.busqueda h1, .page--tarjetas section.anyadir-favoritos h1 {
   text-align: center;
+  color: #fff;
 }
 
 .page--tarjetas section.favoritos {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #cf1143;
   padding-top: 1rem;
   height: 70vh;
@@ -8783,7 +9042,7 @@ header .nav li:nth-child(2) {
 .page--tarjetas section.favoritos .favoritos--tarjetas .tarjetas--informacion {
   margin-left: 2rem;
   font-size: 1rem;
-  color: #000000;
+  color: #000;
   text-align: left;
   width: 75%;
 }
