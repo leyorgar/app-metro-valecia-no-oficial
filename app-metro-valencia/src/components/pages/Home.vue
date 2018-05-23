@@ -30,12 +30,12 @@
           </router-link>
         </li>
         <li>
-          <a href="">
+          <router-link :to="{ name: 'tarifas'}">
             <span class="nav--icono">
               <i class="fas fa-money-bill-wave"></i>
             </span>
-            <p>Precios</p>
-          </a>
+            <p>Tarifas</p>
+          </router-link>
         </li>
         <li>
           <a href="">

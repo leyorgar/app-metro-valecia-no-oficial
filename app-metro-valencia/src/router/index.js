@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import PageHome from '@/components/pages/Home'
+import PageTarjetas from '@/components/pages/Tarjetas'
+import PageTrayectos from '@/components/pages/Trayectos'
 import PageHorarios from '@/components/pages/Mostrar_horarios'
 import PageMapas from '@/components/pages/Mapas'
-import PageTrayectos from '@/components/pages/Trayectos'
-import PageTarjetas from '@/components/pages/Tarjetas'
+import PageTarifas from '@/components/pages/Tarifas'
 
 Vue.use(Router)
 
@@ -14,6 +15,16 @@ export default new Router({
       path: '/',
       name: 'home',
       component: PageHome
+    },
+    {
+      path: '/tarjetas',
+      name: 'tarjetas',
+      component: PageTarjetas
+    },
+    {
+      path: '/trayectos',
+      name: 'trayectos',
+      component: PageTrayectos
     },
     {
       path: '/horarios',
@@ -26,14 +37,9 @@ export default new Router({
       component: PageMapas
     },
     {
-      path: '/trayectos',
-      name: 'trayectos',
-      component: PageTrayectos
-    },
-    {
-      path: '/tarjetas',
-      name: 'tarjetas',
-      component: PageTarjetas
+      path: '/tarifas',
+      name: 'tarifas',
+      component: PageTarifas
     }
   ]
 })

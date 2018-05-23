@@ -7,8 +7,8 @@
         </div>
         <div class="contenedor--form">
           <form>
-            <input class="form-control" type="text" placeholder="Origen">
-            <input class="form-control" type="text" placeholder="Destino">
+            <v-select v-model="origen" :options="estaciones" placeholder="Origen"></v-select>
+            <v-select v-model="destino" :options="estaciones" placeholder="Destino"></v-select>
           </form>
         </div>
         <div class="contenedor--icono-flechas">
@@ -51,12 +51,32 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import vSelect from 'vue-select'
+Vue.component('v-select', vSelect)
 export default {
   name: 'PageTrayectos',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      origen: 0,
+      destino: 0,
+      estaciones: []
     }
+  },
+  mounted: function () {
+    this.estaciones = [{value: '1', label: 'Jesus'}, {value: '2', label: 'Campanar'}, {value: '3', label: 'Plaza España'}, {value: '4', label: 'Benimaclet'}]
+    Vue.http.get('https://metrovlcschedule.herokuapp.com/api/v1/stations').then(response => {
+      for (let key of Object.keys(response.body))  {
+        that.estaciones.push(
+          {
+            value: key,
+            label: response.body[key]
+          }
+        )
+      }
+    }, response => {
+    // error callback
+    })
   }
 }
 </script>

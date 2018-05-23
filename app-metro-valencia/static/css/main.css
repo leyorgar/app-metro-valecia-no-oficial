@@ -8584,21 +8584,21 @@ header .nav li:nth-child(2) {
   width: 80%;
 }
 
-.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form input {
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form .dropdown {
   background: initial;
   border: 2px solid #fff;
   border-radius: 0px;
 }
 
-.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form input::placeholder {
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form .dropdown input::placeholder {
   color: #fff;
 }
 
-.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form input:first-child {
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form .dropdown:first-child {
   margin-bottom: 1rem;
 }
 
-.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form input:focus {
+.page--trayectos section.trayectos--formulario .formulario--contenedor .contenedor--form .dropdown:focus {
   box-shadow: initial;
 }
 
@@ -9076,5 +9076,70 @@ header .nav li:nth-child(2) {
 .page--tarjetas section.favoritos .favoritos--tarjetas .tarjetas--eliminar svg {
   width: 18px;
   fill: #cf1143;
+}
+
+.page--tarifas {
+  padding-top: 1rem;
+}
+
+.page--tarifas h1 {
+  font-size: 1.3rem;
+  text-align: center;
+  color: #fff;
+}
+
+.page--tarifas hr {
+  width: 10rem;
+  margin: 0 auto;
+  border: 2px solid #fff;
+}
+
+.page--tarifas h2 {
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.page--tarifas table.table {
+  background-color: #fff;
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.page--tarifas table.table thead th {
+  border-bottom-color: #cf1143;
+}
+
+.page--tarifas table.table tbody th {
+  text-align: left;
+  border-top-color: #cf1143;
+}
+
+.page--tarifas table.table tbody td {
+  border-top-color: #cf1143;
+}
+
+.page--tarifas p {
+  margin: 0 1rem;
+  font-size: .7rem;
+  color: #fff;
+}
+
+.page--tarifas p.notas {
+  font-weight: 500;
+}
+
+.page--tarifas ul {
+  margin: 0 0 1rem 0;
+}
+
+.page--tarifas ul li {
+  color: #fff;
+  font-size: .7rem;
+}
+
+.page--tarifas section.titulos-propios, .page--tarifas section.tarjeta-tuin, .page--tarifas section.tarjeta-mobilis {
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
